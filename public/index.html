@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Frees</title>
+</head>
+<body>
+	<header>hello freeser</header>
+
+
+	<script>
+	
+		let loader = fetch(`/getmovie`);
+		
+		loader.then((data) => {return data.json();});
+
+		loader.then((data) => {
+			console.log(data);
+		})
+
+		loader.catch((err) => {console.log('err', err)});
+		
+	</script>
+</body>
+</html>
