@@ -14,8 +14,8 @@ let app = express();
 app.use(express.static(`${__dirname}/public`));
 
 let db = new DataBase(() => {
-	// let kinotut = new Kinotut(); kinotut.getdb(db); kinotut.getList(0, true);
-	// let anwap = new Anwap(); anwap.getdb(db); anwap.getList(1, true);
+	let kinotut = new Kinotut(); kinotut.getdb(db); kinotut.getList(0, true);
+	let anwap = new Anwap(); anwap.getdb(db); anwap.getList(1, true);
 
 	// save();
 });
